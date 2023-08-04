@@ -1,0 +1,200 @@
+body {
+  font-family: "Jua", sans-serif;
+  background-image: url(imagea/20230802_061954.jpg);
+}
+
+.slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 80%;
+  top: 80%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg, #2e2ee5, #ffffff);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+.slider-thumb1::before {
+  position: absolute;
+  content: "";
+  right: 80%;
+  top: 180%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+.slider-thumb2::before {
+  position: absolute;
+  content: "";
+  left: 80%;
+  top: 230%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+.slider-thumb3::before {
+  position: absolute;
+  content: "";
+  right: 80%;
+  top: 280%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+.slider-thumb4::before {
+  position: absolute;
+  content: "";
+  left: 80%;
+  top: 350%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg, #2e2ee5, #ffffff);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+.bg-image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.c1 {
+  height: 100vh;
+  width: 86vw;
+}
+
+.navbar {
+  z-index: 3;
+}
+.navbar-toggler {
+  border-radius: 1rem;
+  border: 1px transparent;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0.001rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+
+  border-top-color: rgba(225, 225, 225, 0.5);
+  border-left-color: rgba(225, 225, 225, 0.5);
+  border-bottom-color: rgba(225, 225, 225, 0.1);
+  border-right-color: rgba(225, 225, 225, 0.1);
+}
+.nav-item {
+  border-radius: 1rem;
+  border: 1px transparent;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0.001rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+
+  border-top-color: rgba(225, 225, 225, 0.5);
+  border-left-color: rgba(225, 225, 225, 0.5);
+  border-bottom-color: rgba(225, 225, 225, 0.1);
+  border-right-color: rgba(225, 225, 225, 0.1);
+}
+
+.n1 {
+  background: linear-gradient(to right bottom, rgba(225, 225, 225, 0.5), rgba(225, 225, 225, 0.3));
+}
+
+.card {
+  border-radius: 1rem;
+  border: 1px transparent;
+
+  backdrop-filter: blur(1rem);
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+  border-top-color: rgba(225, 225, 225, 0.5);
+}
+
+.cb1 {
+  background-color: rgba(225, 225, 225, 0.1);
+}
+
+.cb2 {
+  background: linear-gradient(to right bottom, rgba(225, 225, 225, 0.5), rgba(225, 225, 225, 0.3));
+}
+
+@media screen and (max-width: 576px) {
+  .c1 {
+    height: 60vh;
+    width: 100vw;
+    margin-bottom: 60px;
+  }
+
+  .bg-image {
+    height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .slider-thumb::before {
+    left: 50%;
+    top: 80%;
+    width: 280px;
+    height: 280px;
+  }
+  .slider-thumb1::before {
+    right: 70%;
+    top: 160%;
+    width: 250px;
+    height: 250px;
+  }
+  .slider-thumb3::before {
+    right: 70%;
+    top: 305%;
+    width: 250px;
+    height: 250px;
+  }
+}
